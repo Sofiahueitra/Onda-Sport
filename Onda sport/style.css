@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    color: white;
+    padding: 1rem;
+}
+.logo img{
+  height: 70px;
+}
+.navegador{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+.search{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.search input{
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+.search button{
+  background-color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.account{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.account a{
+  color: rgb(231, 51, 135);
+  text-decoration: dotted;
+}
+/*navegador inferiori*/
+.navegador a {
+    color: rgb(231, 51, 135);
+    text-decoration: dotted;
+}
+.carrusel{
+    display: flex;
+    overflow-x: auto;
+}
+.carruselhijo{
+    min-width: 100%;
+    background-color: rgb(231, 51, 135);
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 2px solid rgb(231, 51, 135);
+}
+.boton-comprar-container{
+  text-align: center;
+  margin: 20px 0;
+}
+.boton-comprar{
+  background-color: rgba(205, 75, 135, 0.605);
+  color: #333;
+  border: none;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.secciones{
+    padding: 50px;
+    background-color:rgba(231, 51, 135, 0.474);
+    margin: 10px 0;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+}
+@media (min-width: 768px) {
+    .header{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .menu{
+      flex-direction: row;
+    }
+    .footer{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
