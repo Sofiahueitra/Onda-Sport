@@ -45,7 +45,7 @@ body{
   color: rgb(231, 51, 135);
   text-decoration: dotted;
 }
-/*navegador inferiori*/
+/*navegador inferiorior*/
 .navegador a {
     color: rgb(231, 51, 135);
     text-decoration: dotted;
@@ -87,6 +87,130 @@ body{
     padding: 20px;
     text-align: center;
     gap: 10px;
+}
+/*CONTACTO */
+.contact-conteiner {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-contacto {
+  flex: 1;
+  max-width: 400px;
+}
+
+.info-contacto h1{
+  margin-bottom: 1rem;
+}
+
+.formulario-contacto {
+  flex: 2;
+  max-width: 700px;
+}
+
+.formulario-contacto label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.formulario-contacto input, textarea{
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario-contacto textarea{
+  height: 150px;
+  resize: vertical;
+}
+
+.formulario-contacto button{
+  margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color:rgb(231, 51, 135);
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: not-allowed
+}
+
+/* PRODUCTOS*/
+.productos-layout{
+  display: flex;
+  padding: 2rem;
+}
+.filtros {
+  width: 220px;
+  margin-right: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.filtros h2,.filtros h3{
+  margin-bottom: 0.5rem;
+}
+
+.filtros ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.filtros ul li a{
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin: 0.3rem 0; 
+}
+
+.galeria-productos {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+.producto{
+  width: 230px;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.producto img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.producto h4{
+  margin: 0.5rem 0;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.producto button{
+  margin-top: 1rem;
+  background-color: rgb(231, 51, 135);
+  color: #333;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
     .header{

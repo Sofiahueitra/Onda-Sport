@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onda Sport</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+        <header class="header">
         <div class="logo"><img src="./img/logo.png" alt="Logo Onda Sport"></div>
         <div class="search">
             <input type="text" name="text" id="Buscar...">
@@ -31,29 +31,40 @@
         </nav>
     </header>
 
-    <section class="carrusel">
-        <div class="carruselhijo">CALZAS</div>
-        <div class="carruselhijo">REMERAS & TOPS</div>
-        <div class="carruselhijo">CONJUNTOS</div>
-        <div class="carruselhijo">HOMBRE</div>
-        <div class="carruselhijo">SALE</div>
-    </section>
-    <div class="boton-comprar-container">
-        <button class="boton-comprar">Comprar</button>
-    </div>
+    <div class="contact-conteiner">
+        <div class="info-contacto">
+            <h1>Contacto</h1>
+            <p>+549294*****</p>
+            <p>*****@gmail.com</p>
+        </div>
 
-    <section class="secciones">Calzas</section>
-    <section class="secciones">Remeras & Tops</section>
-    <section class="secciones">Conjuntos</section>
-    <section class="secciones">Hombre</section>
-    <section class="secciones">Sale</section>
+        <div class="formulario-contacto">
+            <form id="contact-form">
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" placeholder="ej.: María Perez" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="ej.: tuemail@email.com"required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="ej.: 1123445567">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" placeholder="ej.: Tu mensaje" required></textarea>
+
+                <button type="submit" id="enviar-btn" disabled>Enviar</button>
+            </form>
+
+        </div>
+
+    </div>
 
     <footer class="footer">
         <div class="social">Redes sociales</div>
         <div class="pago">Medios de pago</div>
         <div class="envio">Medios de envío</div>
         <div class="contact">Como realizar tu compra</div>
-    </footer>
+    </footer> 
     
 </body>
 </html>

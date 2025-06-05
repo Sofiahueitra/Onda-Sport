@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onda Sport</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         <div class="logo"><img src="./img/logo.png" alt="Logo Onda Sport"></div>
         <div class="search">
             <input type="text" name="text" id="Buscar...">
@@ -31,22 +31,44 @@
         </nav>
     </header>
 
-    <section class="carrusel">
-        <div class="carruselhijo">CALZAS</div>
-        <div class="carruselhijo">REMERAS & TOPS</div>
-        <div class="carruselhijo">CONJUNTOS</div>
-        <div class="carruselhijo">HOMBRE</div>
-        <div class="carruselhijo">SALE</div>
-    </section>
-    <div class="boton-comprar-container">
-        <button class="boton-comprar">Comprar</button>
-    </div>
+    <main class="productos-layout"> 
+        <aside class="filtros">
+            <h1>Productos</h1>
+            <ul>
+            <h2>Filtrar por</h2>
+            <h3>Categorías</h3>
+            <li><a href="#">Calzas</a></li>
+            <li><a href="#">Remeras & Tops</a></li>
+            <li><a href="#">Conjuntos</a></li>
+            <li><a href="#">Hombre</a></li>
+            <li><a href="#">Sale</a></li>
+            </ul>
+        </aside>
 
-    <section class="secciones">Calzas</section>
-    <section class="secciones">Remeras & Tops</section>
-    <section class="secciones">Conjuntos</section>
-    <section class="secciones">Hombre</section>
-    <section class="secciones">Sale</section>
+        <section class="galeria-productos">
+            <div class="producto">
+                <img src="./img/conjunto1.jpg" alt="Conjunto">
+                <h4>Conjunto 1</h4>
+                <p class="precio">$90.000</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="./img/conjunto2.jpg" alt="Conjunto">
+                <h4>Conjunto 2</h4>
+                <p class="precio">$90.000</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="./img/conjunto3.jpg" alt="Conjunto">
+                <h4>Conjunto 3</h4>
+                <p class="precio">$90.000</p>
+                <button>Comprar</button>
+            </div>
+
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="social">Redes sociales</div>
@@ -54,6 +76,5 @@
         <div class="envio">Medios de envío</div>
         <div class="contact">Como realizar tu compra</div>
     </footer>
-    
 </body>
 </html>
