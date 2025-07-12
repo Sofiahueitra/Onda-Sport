@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header class="header">
-        <div class="logo"><img src="img/logo.png" alt="Logo Onda Sport"></div>
-        <div class="search">
+    
+    <header class="header">
+            <div class="logo"><img src="img/logo.png" alt="Logo Onda Sport"></div>
+            <div class="search">
             <input type="text" name="text" id="Buscar...">
             <button><i class="search-icon">🔍</i></button>
-        </div>
+            </div>
 
         <nav class="navegador">
             <a href="index.html">Inicio</a>
@@ -40,15 +41,16 @@
         </div>
 
         <div class="formulario-contacto">
-            <form id="contact-form">
+            
+            <form id="contact-form" method="POST" action="/contacto">
                 <label for="nombre">Nombre y apellido</label>
-                <input type="text" id="nombre" placeholder="ej.: María Perez" required>
+                <input type="text" id="nombre" name= "nombre"placeholder="ej.: María Perez" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="ej.: tuemail@email.com"required>
+                <input type="email" id="email" name="email" placeholder="ej.: tuemail@email.com" required>
 
                 <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" placeholder="ej.: 1123445567">
+                <input type="tel" id="telefono" name="telefono" placeholder="ej.: 1123445567">
 
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" placeholder="ej.: Tu mensaje" required></textarea>
@@ -66,6 +68,6 @@
         <div class="envio">Medios de envío</div>
         <div class="contact">Como realizar tu compra</div>
     </footer> 
-    
+    <script src="formulario.js"></script>
 </body>
 </html>
