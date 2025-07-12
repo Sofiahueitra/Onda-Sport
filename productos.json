@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "nombre": "Calza deportiva compresiva",
+    "categoria": "Mujer",
+    "marca": "Onda Sport",
+    "colores": ["Negro", "Gris", "Azul"],
+    "talles": ["S", "M", "L", "XL"],
+    "precio": 8500,
+    "imagen": "img/calza1.jpg",
+    "descripcion": "Calza de alto rendimiento con tecnología de compresión y secado rápido."
+  },
+  {
+    "id": 2,
+    "nombre": "Top deportivo con espalda cruzada",
+    "categoria": "Mujer",
+    "marca": "Onda Sport",
+    "colores": ["Negro", "Rosa", "Celeste"],
+    "talles": ["S", "M", "L"],
+    "precio": 4900,
+    "imagen": "img/top1.jpg",
+    "descripcion": "Top con soporte medio y diseño anatómico. Ideal para entrenamiento."
+  },
+  {
+    "id": 3,
+    "nombre": "Jogger urbano",
+    "categoria": "Hombre",
+    "marca": "Onda Sport",
+    "colores": ["Gris", "Negro"],
+    "talles": ["M", "L", "XL"],
+    "precio": 9500,
+    "imagen": "img/jogger1.jpg",
+    "descripcion": "Jogger de algodón con bolsillos laterales y puños ajustados. Casual y cómodo."
+  },
+  {
+    "id": 4,
+    "nombre": "Remera dry fit",
+    "categoria": "Hombre",
+    "marca": "Onda Sport",
+    "colores": ["Blanco", "Rojo", "Azul Marino"],
+    "talles": ["S", "M", "L", "XL", "XXL"],
+    "precio": 6200,
+    "imagen": "img/remera1.jpg",
+    "descripcion": "Remera deportiva de secado rápido y gran respirabilidad."
+  },
+  {
+    "id": 5,
+    "nombre": "Conjunto deportivo mujer",
+    "categoria": "Mujer",
+    "marca": "Onda Sport",
+    "colores": ["Negro con fucsia", "Gris con turquesa"],
+    "talles": ["S", "M", "L"],
+    "precio": 12500,
+    "imagen": "img/conjunto1.jpg",
+    "descripcion": "Conjunto de calza y top combinados para entrenar con estilo y comodidad."
+  }
+]

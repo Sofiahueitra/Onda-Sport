@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+  
+        <header class="header">
+        <div class="logo"><img src="img/logo.png" alt="Logo Onda Sport"></div>
+        <div class="search">
+            <input type="text" name="text" id="Buscar...">
+            <button><i class="search-icon">🔍</i></button>
+        </div>
+
+        <nav class="navegador">
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+            <a href="producto.html">Productos</a>
+                <div class="dropdown-content">
+                    <li><a href="producto.calzas.html">Calzas</a></li>
+                    <li><a href="producto.remeras.html">Remeras & Tops</a></li>
+                    <li><a href="producto.conjuntos.html">Conjuntos</a></li>
+                    <li><a href="producto.hombre.html">Hombre</a></li>
+                    <li><a href="producto.sale.html">Sale</a></li>
+                </div>
+            </div>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Iniciar sesión</a>
+            <a href="#">🛒 0</a>
+        </nav>
+    </header>
+
+        <div class="formulario">
+            <h1>Iniciar sesión</h1>
+            <form>
+                <div class="mail">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email"required>    
+                </div>
+                <div class="contraseña">
+                    <label> Contraseña</label>
+                    <input type="password" name="password" id="password"required>
+                </div>
+                <div class="remember"> <a href="reset.html">Olvido su contraseña?</a></div>
+               <input type="submit" class="login-button" value="Iniciar sesión">
+               <div class="registrarse">¿No tenés cuenta aún?
+                <a href="register.html">Crear cuenta</a>
+               </div>
+
+            </form>
+        </div>
+    <footer class="footer">
+        <div class="social">Redes sociales</div>
+        <div class="pago">Medios de pago</div>
+        <div class="envio">Medios de envío</div>
+        <div class="contact">Como realizar tu compra</div>
+    </footer>
+    
+</body>
+</html>

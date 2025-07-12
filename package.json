@@ -1,0 +1,23 @@
+{
+  "name": "onda-sport",
+  "version": "1.0.0",
+  "main": "register.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sofiahueitra/Onda-Sport.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sofiahueitra/Onda-Sport/issues"
+  },
+  "homepage": "https://github.com/Sofiahueitra/Onda-Sport#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

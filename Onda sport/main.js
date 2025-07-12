@@ -1,4 +1,4 @@
-//FUNCION BIENVENIDA
+/*//FUNCION BIENVENIDA
     let nombre = prompt("¡Bienvenido/a! ¿Cómo te llamás?");
 
     alert("Hola " + nombre + ", gracias por visitar Onda Sport.");
@@ -19,7 +19,7 @@ let respuesta = prompt("¿Deseás suscribirte y recibir noticias de Onda Sport? 
         console.log("El usuario no deseó suscribirse.");
     }
 
-
+*/
 /*
     let codigo = prompt("¿Tenés un código de descuento? Ingresalo aquí:");
     if (codigo === "DEPORTES10") {
