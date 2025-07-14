@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const email = document.getElementById('email');
   const mensaje = document.getElementById('mensaje');
   const enviarBtn = document.getElementById('enviar-btn');
+  const formulario = document.getElementById('contact-form');
 
   function validarFormulario() {
     const nombreValido = nombre.value.trim() !== '';
@@ -12,17 +13,44 @@ document.addEventListener('DOMContentLoaded', () => {
     enviarBtn.disabled = !(nombreValido && emailValido && mensajeValido);
   }
 
-  // Cada vez que el usuario escribe, se verifica
   nombre.addEventListener('input', validarFormulario);
   email.addEventListener('input', validarFormulario);
   mensaje.addEventListener('input', validarFormulario);
-});
 
-formulario.addEventListener('submit', function (e) {
-    if (enviarBtn.disabled) {
-      alert("Por favor, completá todos los campos obligatorios.");
-      e.preventDefault();
-    } else {
-      alert("¡Gracias por su mensaje, pronto lo contactaremos!");
+  formulario.addEventListener('submit', async function (e) {
+    e.preventDefault(); // No recarga
+
+    const datos = {
+      nombre: nombre.value,
+      email: email.value,
+      telefono: telefono.value,
+      mensaje: mensaje.value
+    };
+
+    try {
+      const respuesta = await fetch('/contacto', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(datos)
+      });
+
+      if (respuesta.ok) {
+        alert("¡Gracias por tu mensaje, pronto te contactaremos!");
+
+        // Limpiar formulario
+        nombre.value = '';
+        email.value = '';
+        telefono.value = '';
+        mensaje.value = '';
+        enviarBtn.disabled = true;
+      } else {
+        alert("Hubo un error al enviar el mensaje.");
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      alert("Error de conexión.");
     }
   });
+});
